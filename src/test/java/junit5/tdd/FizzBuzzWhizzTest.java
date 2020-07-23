@@ -19,4 +19,16 @@ public class FizzBuzzWhizzTest {
         assertEquals("1",actual);
     }
 
+    @Test
+    void should_return_Fizz_when_play_fizz_buzz_whizz_given_3(){
+        //given
+        int number = 3;
+        FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+
+        //when
+        String actual = fizzBuzzWhizz.play(number);
+
+        //then
+        assertEquals("Fizz",actual);
+    }
 }
