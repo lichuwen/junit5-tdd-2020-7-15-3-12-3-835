@@ -4,13 +4,13 @@ public class FizzBuzzWhizz {
     public String play(int number) {
         String result = "";
         if(number % 3 == 0){
-            result = "Fizz";
+            result += "Fizz";
         }
         if(number % 5 == 0){
-            result = "Buzz";
+            result += "Buzz";
         }
         if(number % 7 == 0){
-            result = "Whizz";
+            result += "Whizz";
         }
         if(result == ""){
             result = String.valueOf(number);
